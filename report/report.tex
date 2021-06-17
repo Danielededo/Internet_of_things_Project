@@ -26,7 +26,7 @@
 	\centering
 	{\scshape\Huge\textbf{Keep your distance}\par}
 	\vspace{1cm}
-		\href{https://github.com/Danielededo/Internet_of_things_Project}{https://github.com/Danielededo/Internet_of_things_Project}
+		%\href{https://github.com/Danielededo/Internet_of_things_Project}{https://github.com/Danielededo/Internet_of_things_Project}
 	\vspace{1cm}
 
 	{\scshape\Large Internet of Things - Project Report\par}
@@ -45,9 +45,9 @@ Each mote exchanges a message composed only of the sender ID. In particular the 
 \subsection{Contacts}
 Each mote keeps track of the other motes currently in its range through a structure that contains:
 \begin{itemize}
-  \item \textbf{id}, id of the mote in range stored as 16 bits unsigned integer;
-  \item \textbf{timeStamp}, indication of time of the last message sent by said mote stored as 32 bits unsigned integer;
-  \item \textbf{counter}, with values in range [1,10] stored as 8 bits unsigned integer.
+  \item \textbf{id}, id of the mote in range;
+  \item \textbf{timeStamp}, indication of time of the last message sent by said mote;
+  \item \textbf{counter}  $\in [1,10]$, it indicates how many messages the mote received from its contact.
 \end{itemize}
 
 \section{Basic functioning of the mote}
@@ -67,7 +67,7 @@ Each mote prints a message that is shown in Cooja and forwarded to NodeRed.
 In NodeRed, nodes stay alway up listening for messages sent by motes. Such messages converge into a single node which will route them according to its type.
 
 \subsection{General log flow}
-Every message is sent to another node which will remove the impurity, constituted by random characters injected at the beginning of the message by cooja. A timestamp of the in the format [YY/MM/DD HH:MM:SS] is then added at the beginning.Finally, the resulting lines are appended to a txt file which will work as the log file of the application.
+Every message is sent to another node which will remove the impurity, constituted by random characters injected at the beginning of the message by cooja. A timestamp of the in the format [YYYY-MM-DD HH:MM:SS] is then added at the beginning.Finally, the resulting lines are appended to a txt file which will work as the log file of the application.
 
 \subsection{Alarm message flow}
 In addition to being stored in the log files, ALARM messages have also to be sent to the user via IFTTT. \newline
