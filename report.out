@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Data structures}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Message}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Contacts}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Basic functioning of the mote}{}% 4
+\BOOKMARK [1][-]{section.3}{From Cooja to NodeRed}{}% 5
+\BOOKMARK [1][-]{section.4}{NodeRed}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{General log flow}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Alarm message flow}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{IFTTT}{}% 9
+\BOOKMARK [1][-]{section.6}{Log}{}% 10
+\BOOKMARK [1][-]{section.7}{Demonstration}{}% 11
