@@ -1,10 +1,9 @@
 #ifndef PROJECT_HEADER
 #define PROJECT_HEADER
 
-#define CONTACT_SLOTS 20
-#define COUNT_LIMIT 10
-#define TIMER_LIMIT 500
-
+#define CONTACT_SLOTS 20 //Slots reserved to contact entries
+#define COUNT_LIMIT 10 // Upper bound of the counter
+#define TIMER_LIMIT 500 // Timer of the firing of the message
 
 typedef nx_struct mote_msg {
     nx_uint16_t senderId;
